@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anthony's Budget Coaching</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">Anthony's Budget Coaching</div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#book">Book a Session</a>
+        <a href="#resources">Free Resources</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div>
+        <p class="tagline">Simple, judgment-free money coaching</p>
+        <h1>Take control of your money, one paycheck at a time.</h1>
+        <p class="hero-text">
+          I help young adults build a clear budget, understand HYSA and Roth IRAs,
+          and create money habits that actually stick.
+        </p>
+        <a href="#book" class="btn-primary">Book a Budget Session</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Services</h2>
+      <p class="section-intro">
+        Choose the level of support that fits where you are right now.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <h3>Budget Setup Session</h3>
+          <p class="price">$35</p>
+          <p>
+            One 45-minute session where we build your entire budget, walk through
+            HYSA and Roth IRA basics, and create a clear plan for your next few months.
+          </p>
+          <ul>
+            <li>Custom paycheck-by-paycheck budget</li>
+            <li>HYSA + Roth IRA explained in simple terms</li>
+            <li>Clear next steps you can follow right away</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>4-Week Money Reset</h3>
+          <p class="price">$99</p>
+          <p>
+            A month-long program focused on building habits, staying consistent,
+            and actually following the plan we create together.
+          </p>
+          <ul>
+            <li>Weekly 30-minute check-ins</li>
+            <li>Spending reviews and budget adjustments</li>
+            <li>Savings and investing roadmap</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Monthly Accountability</h3>
+          <p class="price">$25 / month</p>
+          <p>
+            Ongoing support for clients who want someone in their corner
+            to keep them on track with their goals.
+          </p>
+          <ul>
+            <li>Monthly check-in</li>
+            <li>Spending + savings review</li>
+            <li>Support for big goals (car, apartment, etc.)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="section-intro">
+        I’m Anthony, a budgeting coach who speaks in dollars, not confusing jargon.
+      </p>
+      <p>
+        I work mainly with 18–20 year olds who are just starting out with money:
+        first jobs, first bank accounts, and zero formal financial education.
+        My goal is to make money feel simple, clear, and doable—no judgment,
+        no lectures, just real conversations and practical plans.
+      </p>
+    </div>
+  </section>
+
+  <section id="book" class="section">
+    <div class="container">
+      <h2>Book a Session</h2>
+      <p class="section-intro">
+        Ready to get your money organized? Start with a Budget Setup Session.
+      </p>
+      <form class="form">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </label>
+        <label>
+          What are you looking for?
+          <select name="service">
+            <option>Budget Setup Session ($35)</option>
+            <option>4-Week Money Reset ($99)</option>
+            <option>Monthly Accountability ($25/month)</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Tell me a bit about your situation..."></textarea>
+        </label>
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+      <p class="note">
+        You can also reach out via DM or email if that’s easier.
+      </p>
+    </div>
+  </section>
+
+  <section id="resources" class="section section-alt">
+    <div class="container">
+      <h2>Free Resources</h2>
+      <p class="section-intro">
+        For anyone who wants to start learning on their own.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <h3>HYSA Guide</h3>
+          <p>Learn what a high-yield savings account is and how to pick one.</p>
+        </div>
+        <div class="card">
+          <h3>Roth IRA Basics</h3>
+          <p>Simple breakdown of how Roth IRAs work for young adults.</p>
+        </div>
+        <div class="card">
+          <h3>Beginner Budget Template</h3>
+          <p>A basic structure you can use to start tracking your money.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Anthony's Budget Coaching. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
